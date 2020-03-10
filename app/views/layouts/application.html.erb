@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= image_tag("logo") %>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <footer>
+      Made by <%= link_to "Jamie Finlay", "http://jamiefinlay.co.uk" %>
+    </footer>
   </body>
 </html>
